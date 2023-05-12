@@ -4,7 +4,6 @@ import com.virtual.system.inmobiliaria.web.app.models.Inmueble;
 import com.virtual.system.inmobiliaria.web.app.repository.InmuebleRepository;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -18,7 +17,7 @@ public class InmuebleServiceImpl implements InmuebleService{
 
     @Override
     public Inmueble saveInmueble(Inmueble inmueble){
-        inmueble.setDateCreation(LocalDateTime.now());
+     //   inmueble.setDateCreation(LocalDateTime.now());
         return inmuebleRepository.save(inmueble);
     }
 
